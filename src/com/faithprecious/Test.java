@@ -34,11 +34,7 @@ public class Test {
             int[] num=new int[icount];
             System.out.println("请输入选择的租车序号：");
             for (int i=0;i<icount;i++){
-                if(scanner.nextInt()>icount){
-                    System.out.println("你的输入有误，请退出重试");
-                    return;
-                }
-                num[i]=scanner.nextInt()-1;
+              num[i]=scanner.nextInt()-1;
             }
             System.out.println("请选择租车天数：");
             int days=scanner.nextInt();
